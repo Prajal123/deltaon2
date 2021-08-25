@@ -19,11 +19,11 @@ while($rows=mysqli_fetch_assoc($result)){
         $result2=mysqli_query($conn,$sql2);
         return ;
     }
-    echo '<h3>'.$no.'. This url has been clicked at '.$row['location'].'</h3>';
+    echo '<h3>'.$no.'. This url has been clicked at '.$row['location']. ' at the time '.$row['time'].'</h3>';
     $no++;
 }
     while($row=mysqli_fetch_assoc($result1)){
-      echo '<h3>'.$no.'. This url has been clicked at '.$row['location'].'</h3>';
+      echo '<h3>'.$no.'. This url has been clicked at '.$row['location']. ' at the time '.$row['time'].'</h3>';
       $no++;
     }
     echo '<hr>';
